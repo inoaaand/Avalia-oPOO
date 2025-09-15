@@ -13,20 +13,21 @@
 
 // @RestController
 // @RequestMapping("/tarefas")
-// // @CrossOrigin(origins = "*") // Libere se for consumir de um front rodando em
+// // @CrossOrigin(origins = "*") // Libere se for consumir de um front rodando
+// em
 // // outra origem
 // public class TarefaController {
-//     private final TarefaService service;
+// private final TarefaService service;
 
-//     public TarefaController(TarefaService service) {
-//         this.service = service;
-//     }
-//     // Exemplo: GET
-//     // @RequestMapping("/tarefas")
-//     // @CrossOrigin(origins = "*") // Libere se for consumir de um front rodando
-//     em
+// public TarefaController(TarefaService service) {
+// this.service = service;
+// }
+// // Exemplo: GET
+// // @RequestMapping("/tarefas")
+// // @CrossOrigin(origins = "*") // Libere se for consumir de um front rodando
+// em
 
-//     // outra origem
+// // outra origem
 // public class TarefaController {
 // private final TarefaService service;
 // public TarefaController(TarefaService service) {
