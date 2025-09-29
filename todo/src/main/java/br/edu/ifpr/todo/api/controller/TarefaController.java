@@ -128,5 +128,6 @@ public class TarefaController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void remover(@PathVariable Long id) {
         service.remover(id);
+        
     }
 }
