@@ -50,6 +50,7 @@ public class TarefaService {
         t.setNome(dto.getNome());
         t.setDescricao(dto.getDescricao());
         t.setStatus(dto.getStatus() != null ? dto.getStatus() : TodoStatus.A_FAZER);
+        t.setDataCriacao(LocalDate.now());
         t.setDataEntrega(dto.getDataEntrega());
         t.setImportante(dto.getImportante() != null ? dto.getImportante() : false);
         return repo.save(t);
