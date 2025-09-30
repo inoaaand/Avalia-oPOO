@@ -15,3 +15,12 @@
   "importante": true
 }
 ```
+
+```
+{
+  "nome": "Preparar slides de JPA",
+  "descricao": "Relacionamentose exemplo Many-to-Many",
+  "dataEntrega":"2025-09-01",
+  "importante": true
+}
+```

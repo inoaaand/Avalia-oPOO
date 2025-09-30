@@ -59,13 +59,22 @@ public class TarefaService {
     @Transactional
     public Tarefa atualizar(Long id, TarefaRequest dto) {
         Tarefa t = buscarPorId(id);
-        t.setNome(dto.getNome());
-        t.setDescricao(dto.getDescricao());
-        if (dto.getStatus() != null)
+
+        if (dto.getNome() != null) {
+            t.setNome(dto.getNome());
+        }
+        if (dto.getDescricao() != null) {
+            t.setDescricao(dto.getDescricao());
+        }
+        if (dto.getStatus() != null) {
             t.setStatus(dto.getStatus());
-        t.setDataEntrega(dto.getDataEntrega());
-        if (dto.getImportante() != null)
+        }
+        if (dto.getDataEntrega() != null) {
+            t.setDataEntrega(dto.getDataEntrega());
+        }
+        if (dto.getImportante() != null) {
             t.setImportante(dto.getImportante());
+        }
         return repo.save(t);
     }
 
